@@ -5,6 +5,7 @@ window:
 
 colors:
   primary:
+    background: '0x282c34'
     foreground: '0xdcdfe4'
 
   normal:
