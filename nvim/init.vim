@@ -6,13 +6,9 @@ call plug#begin()
 	Plug 'tpope/vim-fugitive'
 	Plug 'vim-airline/vim-airline'
 	Plug 'sonph/onehalf', { 'rtp': 'vim' }
+	Plug 'sbdchd/neoformat'
+	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
-
-syntax on
-set t_Co=256
-set cursorline
-colorscheme onehalfdark
-let g:airline_theme='onehalfdark'
 
 highlight Normal guibg=none
 
@@ -42,3 +38,14 @@ nnoremap <leader>y  "+y
 nnoremap <leader>yy  "+yy
 nnoremap <leader>p "+p
 nnoremap <leader>P "+P
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  ignore_install = { "javascript" }, -- List of parsers to ignore installing
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
