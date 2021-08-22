@@ -31,6 +31,7 @@ map <leader>j :wincmd j<CR>
 map <leader>l :wincmd l<CR>
 nnoremap <leader>= :vertical resize +5<CR>
 nnoremap <leader>- :vertical resize -5<CR>
+nnoremap <leader>f :Neoformat<CR>
 
 set clipboard+=unnamedplus
 nnoremap <leader>Y  "+yg_

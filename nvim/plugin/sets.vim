@@ -16,3 +16,4 @@ set incsearch
 set scrolloff=8
 set colorcolumn=80
 set signcolumn=yes
+autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
