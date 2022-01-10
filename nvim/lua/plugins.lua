@@ -1,0 +1,25 @@
+require('packer').startup(function()
+  use 'wbthomason/packer.nvim'
+  use 'vim-test/vim-test'
+  use 'nvim-lua/popup.nvim'
+	use 'nvim-lua/plenary.nvim'
+	use 'nvim-telescope/telescope.nvim'
+	use 'tpope/vim-fugitive'
+	use 'vim-airline/vim-airline'
+	use 'neovim/nvim-lspconfig'
+	use {'williamboman/nvim-lsp-installer', config = require('configs/lsp_installer')}
+  use "projekt0n/github-nvim-theme"
+	use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+	use {'nvim-treesitter/nvim-treesitter', config = require('configs/treesitter')}
+	use {
+		"hrsh7th/nvim-cmp",
+		requires = {
+			{"hrsh7th/cmp-nvim-lsp"}, {"hrsh7th/cmp-buffer"}, {"hrsh7th/cmp-path"},
+			{"hrsh7th/cmp-cmdline"}, {"hrsh7th/cmp-vsnip"},
+			{"f3fora/cmp-spell", {"hrsh7th/cmp-calc"}, {"hrsh7th/cmp-emoji"}, {'hrsh7th/vim-vsnip'}}
+		},
+		config = require('configs/cmp')
+	}
+end)
+
+	-- use {'nvim-treesitter/nvim-treesitter', config = require('configs/treesitter')}

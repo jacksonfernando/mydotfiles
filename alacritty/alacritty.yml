@@ -1,4 +1,4 @@
-window:
+indow:
   padding:
     x: 6
     y: 6
@@ -29,9 +29,11 @@ colors:
     white: '0xdcdfe4'
 
 font:
-  size: 15
+  size: 14
+  normal:
+    family: Hack Nerd Font
+    style: Regular
 
 selection:
   save_to_clipboard: true
 
-background_opacity: 0.8
