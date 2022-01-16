@@ -7,8 +7,9 @@ require('packer').startup(function()
 	use 'tpope/vim-fugitive'
 	use 'vim-airline/vim-airline'
 	use 'neovim/nvim-lspconfig'
+  use {'kyazdani42/nvim-tree.lua', config = require('configs/filetree')}
 	use {'williamboman/nvim-lsp-installer', config = require('configs/lsp_installer')}
-  use "projekt0n/github-nvim-theme"
+  use 'folke/tokyonight.nvim'
 	use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 	use {'nvim-treesitter/nvim-treesitter', config = require('configs/treesitter')}
 	use {
