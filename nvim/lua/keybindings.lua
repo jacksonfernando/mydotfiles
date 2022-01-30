@@ -3,6 +3,8 @@ map('n', '<Space>', '', {})
 vim.g.mapleader = ' '
 local options = { noremap = true }
 -- netrw and window moving
+map('n', '<leader>te', ':terminal<cr>', options)
+map('n', '<leader>ve', ':vertical sb<cr>', options)
 map('n', '<leader>pv', ':NvimTreeToggle<cr>', options)
 map('n', '<leader>h', ':wincmd h<cr>', options)
 map('n', '<leader>j', ':wincmd j<cr>', options)
