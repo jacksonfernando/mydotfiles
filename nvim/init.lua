@@ -3,7 +3,6 @@ require('plugins')
 require('sets')
 require("bufferline").setup{}
 
-
 vim.cmd([[syntax on]])
 vim.g.tokyonight_style = "night"
 vim.g.tokyonight_italic_functions = true

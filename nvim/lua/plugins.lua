@@ -7,11 +7,11 @@ require('packer').startup(function()
 	use 'tpope/vim-fugitive'
 	use 'vim-airline/vim-airline'
 	use 'neovim/nvim-lspconfig'
-  use {'kyazdani42/nvim-tree.lua', config = require('configs/filetree')}
-	use {'williamboman/nvim-lsp-installer', config = require('configs/lsp_installer')}
   use 'folke/tokyonight.nvim'
 	use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
-	use {'nvim-treesitter/nvim-treesitter', config = require('configs/treesitter')}
+	use {'nvim-treesitter/nvim-treesitter', config = function() require('configs/treesitter') end}
+	use {'williamboman/nvim-lsp-installer', config = function() require('configs/lsp_installer') end}
+  use {'kyazdani42/nvim-tree.lua', config = function() require('configs/filetree') end}
 	use {
 		"hrsh7th/nvim-cmp",
 		requires = {
@@ -19,8 +19,6 @@ require('packer').startup(function()
 			{"hrsh7th/cmp-cmdline"}, {"hrsh7th/cmp-vsnip"},
 			{"f3fora/cmp-spell", {"hrsh7th/cmp-calc"}, {"hrsh7th/cmp-emoji"}, {'hrsh7th/vim-vsnip'}}
 		},
-		config = require('configs/cmp')
+		config = function() require('configs/cmp') end
 	}
 end)
-
-	-- use {'nvim-treesitter/nvim-treesitter', config = require('configs/treesitter')}
