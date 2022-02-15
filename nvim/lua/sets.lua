@@ -21,3 +21,4 @@ vim.g.netrw_winsize = 25
 vim.g.netrw_bannder = 0
 vim.g.netrw_localrmdir = 'rm -r'
 vim.opt.termguicolors = true
+vim.opt.clipboard = 'unnamedplus'
