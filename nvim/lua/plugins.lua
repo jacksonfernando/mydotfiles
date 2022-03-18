@@ -3,7 +3,6 @@ require('packer').startup(function()
   use 'vim-test/vim-test'
   use 'nvim-lua/popup.nvim'
 	use 'nvim-lua/plenary.nvim'
-	use 'nvim-telescope/telescope.nvim'
 	use 'tpope/vim-fugitive'
 	use 'vim-airline/vim-airline'
 	use 'neovim/nvim-lspconfig'
@@ -11,6 +10,7 @@ require('packer').startup(function()
   use 'thosakwe/vim-flutter'
   use 'folke/tokyonight.nvim'
 	use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+	use {'nvim-telescope/telescope.nvim', config = function() require('configs/telescope') end}
 	use {'nvim-treesitter/nvim-treesitter', config = function() require('configs/treesitter') end}
 	use {'williamboman/nvim-lsp-installer', config = function() require('configs/lsp_installer') end}
   use {'kyazdani42/nvim-tree.lua', config = function() require('configs/filetree') end}
