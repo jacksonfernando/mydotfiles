@@ -8,7 +8,7 @@ require('packer').startup(function()
 	use 'neovim/nvim-lspconfig'
   use 'dart-lang/dart-vim-plugin'
   use 'thosakwe/vim-flutter'
-  use 'folke/tokyonight.nvim'
+	use 'ful1e5/onedark.nvim'
 	use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 	use {'nvim-telescope/telescope.nvim', config = function() require('configs/telescope') end}
 	use {'nvim-treesitter/nvim-treesitter', config = function() require('configs/treesitter') end}
