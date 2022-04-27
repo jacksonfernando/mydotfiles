@@ -29,6 +29,7 @@ colors:
     white:   '#ffffff'
 
 window:
+  opacity: 0.85
   padding:
     x: 6
     y: 6
@@ -37,7 +38,6 @@ font:
   normal:
     style: Regular
     family: FiraCode Nerd Font
-
 selection:
   save_to_clipboard: true
 
