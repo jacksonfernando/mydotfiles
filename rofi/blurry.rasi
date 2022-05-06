@@ -18,10 +18,10 @@ configuration {
 }
 
 * {
-    background:                     #282c34;
+    background:                     #1f1f1f;
     background-alt:              	#00000000;
     background-bar:                 #f2f2f215;
-    foreground:                     #f2f2f2EE;
+    foreground:                     #c0b18b;
     accent:			            	#3DAEE966;
 }
 
