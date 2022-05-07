@@ -9,6 +9,8 @@ require('packer').startup(function()
   use 'dart-lang/dart-vim-plugin'
   use 'thosakwe/vim-flutter'
 	use 'ful1e5/onedark.nvim'
+  use { "ellisonleao/gruvbox.nvim" }
+  use 'xiyaowong/nvim-transparent'
 	use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 	use {'nvim-telescope/telescope.nvim', config = function() require('configs/telescope') end}
 	use {'nvim-treesitter/nvim-treesitter', config = function() require('configs/treesitter') end}
