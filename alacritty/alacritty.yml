@@ -32,7 +32,7 @@ window:
     x: 6
     y: 6
 font:
-  size: 9
+  size: 15
   normal:
     style: Regular
     family: FiraCode Nerd Font
