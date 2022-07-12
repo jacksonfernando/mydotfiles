@@ -1,5 +1,5 @@
 colors:
-  # Default colors
+  # Default colork
   primary:
     background: '0x1f1f1f'
     foreground: '0xc0b18b'
@@ -27,12 +27,12 @@ colors:
     white:   '0xc0b18b'
 
 window:
-  opacity: 0.7
+  opacity: 0.6
   padding:
     x: 6
     y: 6
 font:
-  size: 9
+  size: 13
   normal:
     style: Regular
     family: FiraCode Nerd Font
