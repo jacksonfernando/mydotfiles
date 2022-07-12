@@ -8,7 +8,6 @@ require('packer').startup(function()
 	use 'neovim/nvim-lspconfig'
   use 'dart-lang/dart-vim-plugin'
   use 'thosakwe/vim-flutter'
-	use 'ful1e5/onedark.nvim'
   use { "ellisonleao/gruvbox.nvim" }
   use 'xiyaowong/nvim-transparent'
 	use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
