@@ -1,10 +1,10 @@
 require('keybindings')
 require('plugins')
 require('sets')
-require("bufferline").setup{}
+require("bufferline").setup {}
 require("transparent").setup({
-  enable = true, 
-  extra_groups = { 
+  enable = true,
+  extra_groups = {
     "BufferLineTabClose",
     "BufferlineBufferSelected",
     "BufferLineFill",

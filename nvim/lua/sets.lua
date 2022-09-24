@@ -8,6 +8,7 @@ vim.opt.hidden = true
 vim.opt.hlsearch = true
 vim.opt.errorbells = true
 vim.opt.ignorecase = true
+vim.g.smartcase = true
 vim.opt.smartindent = true
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
