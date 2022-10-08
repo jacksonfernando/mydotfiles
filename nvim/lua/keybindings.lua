@@ -48,4 +48,3 @@ map('i', "<c-l>", "<cmd>lua require'luasnip'.jump(1)<CR>", options)
 map('s', "<c-l>", "<cmd>lua require'luasnip'.jump(1)<CR>", options)
 map('s', "<c-h>", "<cmd>lua require'luasnip'.jump(-1)<CR>", options)
 map('s', "<c-h>", "<cmd>lua require'luasnip'.jump(-1)<CR>", options)
-
