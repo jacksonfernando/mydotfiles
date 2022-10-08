@@ -2,6 +2,7 @@ local highlight_group = vim.api.nvim_create_augroup(
     "highlight_yank", { clear = true }
 )
 
+-- autocmd to highlight yank lines
 vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
         vim.highlight.on_yank({ higroup = "IncSearch", timeout = 500 })
@@ -9,15 +10,16 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     group = highlight_group
 })
 
+-- autocmd to make javasript file indent to 2 spaces
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "javascript",
     callback = function()
         vim.opt.shiftwidth = 2
-        vim.opt.softtabstop = 0
         vim.opt.tabstop = 2
     end,
 })
 
+-- autocmd to delete trailing whitespace
 vim.api.nvim_create_autocmd("BufWritePre", {
     pattern = "*",
     callback = function()
