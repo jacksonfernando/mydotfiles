@@ -43,3 +43,9 @@ map('n', '<leader>bc', ':BufferLinePickClose<cr>', options)
 map('n', '<leader>bp', ':BufferLinePick<cr>', options)
 map('n', '[[', ':BufferLineCycleNext<cr>', options)
 map('n', ']]', ':BufferLineCyclePrev<cr>', options)
+-- snippets
+map('i', "<c-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", options)
+map('s', "<c-j>", "<cmd>lua require'luasnip'.jump(1)<CR>", options)
+map('i', "<c-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", options)
+map('s', "<c-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>", options)
+
