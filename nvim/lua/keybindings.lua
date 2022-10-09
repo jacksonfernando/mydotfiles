@@ -2,7 +2,7 @@ local map = vim.api.nvim_set_keymap
 map('n', '<Space>', '', {})
 vim.g.mapleader = ' '
 local options = { noremap = true }
--- netrw and window moving
+-- nvim tree
 map('n', '<leader>te', ':terminal<cr>', options)
 map('n', '<leader>ve', ':vertical sb<cr>', options)
 map('n', '<leader>pv', ':NvimTreeToggle<cr>', options)
