@@ -19,6 +19,16 @@ vim.api.nvim_create_autocmd("FileType", {
     end,
 })
 
+-- autocmd for json files
+-- TODO: refactor this with the javscript pattern
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "json",
+    callback = function()
+        vim.opt.shiftwidth = 2
+        vim.opt.tabstop = 2
+    end,
+})
+
 -- autocmd to delete trailing whitespace
 vim.api.nvim_create_autocmd("BufWritePre", {
     pattern = "*",
