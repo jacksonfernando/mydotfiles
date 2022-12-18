@@ -17,10 +17,10 @@ require('packer').startup(function()
     use { 'williamboman/mason.nvim',
         config = function() require('configs/mason') end,
         requires = {
-            "williamboman/mason-lspconfig.nvim",
             "neovim/nvim-lspconfig"
         }
     }
+    use "williamboman/mason-lspconfig.nvim"
     use { 'kyazdani42/nvim-tree.lua', config = function() require('configs/filetree') end }
     use {
         "hrsh7th/nvim-cmp",
