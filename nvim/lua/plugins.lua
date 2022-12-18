@@ -14,7 +14,13 @@ require('packer').startup(function()
     use { 'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons' }
     use { 'nvim-telescope/telescope.nvim', config = function() require('configs/telescope') end }
     use { 'nvim-treesitter/nvim-treesitter', config = function() require('configs/treesitter') end }
-    use { 'williamboman/nvim-lsp-installer', config = function() require('configs/lsp_installer') end }
+    use { 'williamboman/mason.nvim',
+        config = function() require('configs/mason') end,
+        requires = {
+            "williamboman/mason-lspconfig.nvim",
+            "neovim/nvim-lspconfig"
+        }
+    }
     use { 'kyazdani42/nvim-tree.lua', config = function() require('configs/filetree') end }
     use {
         "hrsh7th/nvim-cmp",
