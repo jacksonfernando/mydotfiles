@@ -7,7 +7,6 @@ require("bufferline").setup {}
 require('configs/lsp_config')
 require("luasnip.loaders.from_vscode").lazy_load()
 require("transparent").setup({
-    enable = true,
     extra_groups = {
         "BufferLineTabClose",
         "BufferlineBufferSelected",
@@ -16,7 +15,7 @@ require("transparent").setup({
         "BufferLineSeparator",
         "BufferLineIndicatorSelected",
     },
-    exclude = {},
+    exclude_groups = {},
 })
 vim.cmd([[syntax on]])
 vim.opt.background = "dark"
