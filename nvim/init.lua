@@ -1,10 +1,11 @@
 require('keybindings')
+require('mason').setup({})
 require("mason-lspconfig").setup()
+require('configs/lsp_config')
 require('plugins')
 require('autocmds')
 require('sets')
 require("bufferline").setup {}
-require('configs/lsp_config')
 require("luasnip.loaders.from_vscode").lazy_load()
 require("transparent").setup({
     extra_groups = {

@@ -1,5 +1,5 @@
 colors:
-  # Default colork
+  # Default color
   primary:
     background: '0x1f1f1f'
     foreground: '0xc0b18b'
@@ -32,7 +32,7 @@ window:
     x: 6
     y: 6
 font:
-  size: 16
+  size: 10
   normal:
     style: Regular
     family: FiraCode Nerd Font
