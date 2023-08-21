@@ -1,6 +1,7 @@
 require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'vim-test/vim-test'
+    use 'mfussenegger/nvim-jdtls'
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'tpope/vim-fugitive'

@@ -1,8 +1,9 @@
+require('plugins')
 require('keybindings')
 require('mason').setup({})
 require("mason-lspconfig").setup()
 require('configs/lsp_config')
-require('plugins')
+--require('configs/nvim_jdtls')
 require('autocmds')
 require('sets')
 require("bufferline").setup {}
