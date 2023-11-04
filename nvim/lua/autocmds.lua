@@ -10,19 +10,8 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     group = highlight_group
 })
 
--- autocmd to make javasript file indent to 2 spaces
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = "javascript",
-    callback = function()
-        vim.opt.shiftwidth = 2
-        vim.opt.tabstop = 2
-    end,
-})
-
--- autocmd for json files
--- TODO: refactor this with the javscript pattern
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "json",
+    pattern = { "json", "javascript" },
     callback = function()
         vim.opt.shiftwidth = 2
         vim.opt.tabstop = 2
@@ -31,7 +20,7 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- autocmd to delete trailing whitespace
 vim.api.nvim_create_autocmd("BufWritePre", {
-    pattern = "*",
+    pattern = { "*" },
     callback = function()
         vim.cmd([[%s/\s\+$//e]])
         vim.lsp.buf.format()
