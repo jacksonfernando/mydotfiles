@@ -20,33 +20,11 @@ end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
+local language = { 'tsserver', 'gopls', 'clangd', 'yamlls', 'lua_ls', 'cssls' }
 
-require('lspconfig')['tsserver'].setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-require('lspconfig')['gopls'].setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-require('lspconfig')['clangd'].setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-require('lspconfig')['yamlls'].setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-require('lspconfig')['lua_ls'].setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-require('lspconfig')['cssls'].setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
+for _, language_server in ipairs(language) do
+    require('lspconfig')[language_server].setup {
+        on_attach = on_attach,
+        capabilities = capabilities
+    }
+end
