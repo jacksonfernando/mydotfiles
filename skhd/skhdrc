@@ -55,8 +55,4 @@ ctrl + alt - l : \
 #Applications
 cmd - f2 : open -a Firefox
 cmd - f3 : open -a Spotify
-<<<<<<< HEAD
 cmd - return : open -a Alacritty -n 
-=======
-cmd - return : open -a Iterm .
->>>>>>> 54a6618953e41819bbce104c2bfd1fbd3f168850
