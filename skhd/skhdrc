@@ -53,6 +53,7 @@ ctrl + alt - l : \
     yabai -m window --resize left:100:0
 
 #Applications
-cmd - f2 : open -a Firefox
+#cmd - f2 : open -a Firefox
+cmd - f2 : open -a "Google Chrome"
 cmd - f3 : open -a Spotify
 cmd - return : open -a Alacritty -n 
