@@ -56,4 +56,4 @@ ctrl + alt - l : \
 #cmd - f2 : open -a Firefox
 cmd - f2 : open -a "Google Chrome"
 cmd - f3 : open -a Spotify
-cmd - return : open -a Alacritty -n 
+cmd - return : open -a kitty -n 
