@@ -15,5 +15,4 @@ require("config.sets")
 --	exclude_groups = {},
 --})
 vim.cmd([[syntax on]])
---vim.opt.background = "dark"
---vim.cmd([[colorscheme gruvbox]])
+vim.cmd("colorscheme nightfox")
