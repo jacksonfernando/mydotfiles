@@ -1,11 +1,9 @@
 local map = vim.api.nvim_set_keymap
-map('n', '<Space>', '', {})
-vim.g.mapleader = ' '
 local options = { noremap = true }
 -- nvim tree
 map('n', '<leader>te', ':terminal<cr>', options)
 map('n', '<leader>ve', ':vertical sb<cr>', options)
-map('n', '<leader>pv', ':NvimTreeToggle<cr>', options)
+map('n', '<leader>pv', ':Neotree<cr>', options)
 map('n', '<leader>h', ':wincmd h<cr>', options)
 map('n', '<leader>j', ':wincmd j<cr>', options)
 map('n', '<leader>k', ':wincmd k<cr>', options)
@@ -35,3 +33,4 @@ map('i', "<c-l>", "<cmd>lua require'luasnip'.jump(1)<CR>", options)
 map('s', "<c-l>", "<cmd>lua require'luasnip'.jump(1)<CR>", options)
 map('s', "<c-h>", "<cmd>lua require'luasnip'.jump(-1)<CR>", options)
 map('s', "<c-h>", "<cmd>lua require'luasnip'.jump(-1)<CR>", options)
+-- neotree
