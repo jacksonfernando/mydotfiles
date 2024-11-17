@@ -12,10 +12,6 @@ return {
         "rcarriga/nvim-dap-ui",
         event = "VeryLazy",
         dependencies = { "nvim-neotest/nvim-nio", "mfussenegger/nvim-dap" },
-        keys = {
-            { "<leader>du", function() require("dapui").toggle({}) end, desc = "Dap UI" },
-            { "<leader>de", function() require("dapui").eval() end,     desc = "Eval",  mode = { "n", "v" } },
-        },
     },
     {
         "mfussenegger/nvim-dap",
