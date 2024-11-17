@@ -1,3 +1,5 @@
+local clip = '/mnt/c/Windows/System32/clip.exe'
+
 local highlight_group = vim.api.nvim_create_augroup(
     "highlight_yank", { clear = true }
 )
@@ -6,6 +8,9 @@ local highlight_group = vim.api.nvim_create_augroup(
 vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
         vim.highlight.on_yank({ higroup = "IncSearch", timeout = 500 })
+        if vim.v.event.operator == 'y' then
+            vim.fn.system(clip, vim.fn.getreg('"'))
+        end
     end,
     group = highlight_group
 })

@@ -36,3 +36,11 @@ map('s', "<c-l>", "<cmd>lua require'luasnip'.jump(1)<CR>", options)
 map('s', "<c-h>", "<cmd>lua require'luasnip'.jump(-1)<CR>", options)
 map('s', "<c-h>", "<cmd>lua require'luasnip'.jump(-1)<CR>", options)
 -- neotree
+map("n", "<leader>dc", "<cmd>lua require'dap'.continue()<CR>", { noremap = true, silent = true })
+map("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", { noremap = true, silent = true })
+map("n", "<leader>di", "<cmd>lua require'dap'.step_into()<CR>", { noremap = true, silent = true })
+map("n", "<leader>do", "<cmd>lua require'dap'.step_out()<CR>", { noremap = true, silent = true })
+map("n", "<leader>dl", "<cmd>lua require'dap'.step_over()<CR>", { noremap = true, silent = true })
+-- dap ui
+--map("n", "<leader>du", "<cmd>lua require'dapui'.toogle({})<CR>", { noremap = true, silent = true })
+--map("n", "<leader>du", "<cmd>lua require'dapui'.eval({})<CR>", { noremap = true, silent = true })
