@@ -10,6 +10,8 @@ map('n', '<leader>k', ':wincmd k<cr>', options)
 map('n', '<leader>l', ':wincmd l<cr>', options)
 map('n', '<leader>=', ':vertical resize +5<cr>', options)
 map('n', '<leader>-', ':vertical resize -5<cr>', options)
+map('n', '<leader>(', ':vertical horizontal +5<cr>', options)
+map('n', '<leader>)', ':vertical horizontal -5<cr>', options)
 -- telescope
 map('n', '<leader>ff', ':Telescope find_files<cr>', options)
 map('n', '<leader>fg', ':Telescope live_grep<cr>', options)
