@@ -26,5 +26,6 @@ return {
         config = function()
             require("lualine").setup()
         end
-    }
+    },
+    { 'akinsho/toggleterm.nvim', version = "*", config = true }
 }

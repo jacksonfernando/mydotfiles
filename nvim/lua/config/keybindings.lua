@@ -1,7 +1,7 @@
 local map = vim.api.nvim_set_keymap
 local options = { noremap = true }
 -- nvim tree
-map('n', '<leader>te', ':terminal<cr>', options)
+map('n', '<leader>te', ':ToggleTerm<cr>', options)
 map('n', '<leader>ve', ':vertical sb<cr>', options)
 map('n', '<leader>pv', ':Neotree<cr>', options)
 map('n', '<leader>h', ':wincmd h<cr>', options)
@@ -10,8 +10,8 @@ map('n', '<leader>k', ':wincmd k<cr>', options)
 map('n', '<leader>l', ':wincmd l<cr>', options)
 map('n', '<leader>=', ':vertical resize +5<cr>', options)
 map('n', '<leader>-', ':vertical resize -5<cr>', options)
-map('n', '<leader>(', ':vertical horizontal +5<cr>', options)
-map('n', '<leader>)', ':vertical horizontal -5<cr>', options)
+map('n', '<leader>0', ':horizontal resize +5<cr>', options)
+map('n', '<leader>9', ':horizontal resize -5<cr>', options)
 -- telescope
 map('n', '<leader>ff', ':Telescope find_files<cr>', options)
 map('n', '<leader>fg', ':Telescope live_grep<cr>', options)
