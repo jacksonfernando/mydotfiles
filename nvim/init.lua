@@ -1,6 +1,7 @@
 require("config.lazy")
 require("config.keybindings")
-require("config.autocmds")
 require("config.sets")
+require("config.autocmds")
+require("config.toggle_maximize")
 vim.cmd([[syntax on]])
 vim.cmd("colorscheme nightfox")
