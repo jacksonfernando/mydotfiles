@@ -21,10 +21,10 @@ map('n', '<leader>fh', ':Telescope help_tags<cr>', options)
 map('n', '<leader>gs', ':G<cr>', options)
 map('n', '<leader>gh', ':diffget //2<cr>', options)
 map('n', '<leader>gl', ':diffget //3<cr>', options)
--- vim test
-map('n', '<leader>t', ':TestNearest<cr>', options)
-map('n', '<leader>ta', ':TestFile<cr>', options)
-map('n', '<leader>tv', ':TestVisit<cr>', options)
+-- neotest
+map('n', '<leader>tt', ':lua require("neotest").run.run()<cr>', options)
+map('n', '<leader>to', ':lua require("neotest").output.open({ enter = true })<cr>', options)
+map('n', '<leader>ta', ':lua require("neotest").run.run(vim.fn.expand("%"))<cr>', options)
 -- bufferline
 map('n', '<leader>bc', ':BufferLinePickClose<cr>', options)
 map('n', '<leader>bp', ':BufferLinePick<cr>', options)
