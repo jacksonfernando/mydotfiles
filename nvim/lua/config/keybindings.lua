@@ -25,6 +25,7 @@ map('n', '<leader>gl', ':diffget //3<cr>', options)
 map('n', '<leader>tt', ':lua require("neotest").run.run()<cr>', options)
 map('n', '<leader>to', ':lua require("neotest").output.open({ enter = true })<cr>', options)
 map('n', '<leader>ta', ':lua require("neotest").run.run(vim.fn.expand("%"))<cr>', options)
+map('n', '<leader>td', ':lua require("dap-go").debug_test()<cr>', options)
 -- bufferline
 map('n', '<leader>bc', ':BufferLinePickClose<cr>', options)
 map('n', '<leader>bp', ':BufferLinePick<cr>', options)

@@ -25,8 +25,13 @@ return {
         },
         config = function()
             local dap = require("dap")
-            require('dap-go').setup()
+            require('dap-go').setup({
+                delve = {
+                    build_flags = "-tags=unit,integration,e2e",
+                },
+            })
             require('dap.ext.vscode').load_launchjs(nil, {})
+
 
             dap.adapters.codelldb = {
                 type = "server",
