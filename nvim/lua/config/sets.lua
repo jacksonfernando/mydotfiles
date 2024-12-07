@@ -1,3 +1,4 @@
+-- general config
 vim.opt.expandtab        = true
 vim.wo.number            = true
 vim.opt.shiftwidth       = 4
@@ -10,7 +11,7 @@ vim.opt.errorbells       = true
 vim.opt.ignorecase       = true
 vim.g.smartcase          = true
 vim.opt.smartindent      = true
---vim.opt.relativenumber = true
+vim.opt.relativenumber   = true
 vim.opt.swapfile         = false
 vim.opt.undofile         = true
 vim.opt.incsearch        = true
@@ -23,3 +24,6 @@ vim.g.netrw_bannder      = 0
 vim.g.netrw_localrmdir   = 'rm -r'
 vim.opt.termguicolors    = true
 vim.opt.clipboard        = 'unnamedplus'
+-- dap styling
+vim.cmd("hi DapBreakpointColor guifg=#fa4848")
+vim.fn.sign_define("DapBreakpoint", { text = "", texthl = "DapBreakpointColor", linehl = "", numhl = "" })

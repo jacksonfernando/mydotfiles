@@ -32,7 +32,6 @@ return {
             })
             require('dap.ext.vscode').load_launchjs(nil, {})
 
-
             dap.adapters.codelldb = {
                 type = "server",
                 port = 13000,
@@ -57,6 +56,7 @@ return {
             }
 
             dap.configurations.c = dap.configurations.cpp
+
             local dapui = require("dapui")
             dapui.setup()
             dap.listeners.after.event_initialized["dapui_config"] = function()
