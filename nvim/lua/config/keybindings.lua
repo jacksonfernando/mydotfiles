@@ -45,3 +45,7 @@ map("n", "<leader>dl", "<cmd>lua require'dap'.step_over()<CR>", { noremap = true
 -- dap ui
 map("n", "<leader>du", "<cmd>lua require'dapui'.toggle({})<CR>", { noremap = true, silent = true })
 map("n", "<leader>de", "<cmd>lua require'dapui'.eval({})<CR>", { noremap = true, silent = true })
+-- diagnostics
+map('n', '[[', ':BufferLineCycleNext<cr>', options)
+map('n', '[d', "<cmd>lua vim.diagnostic.goto_prev()<CR>", options)
+map('n', ']d', "<cmd>lua vim.diagnostic.goto_next()<CR>", options)
