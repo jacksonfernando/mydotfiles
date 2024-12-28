@@ -48,4 +48,11 @@ map("n", "<leader>de", "<cmd>lua require'dapui'.eval({})<CR>", { noremap = true,
 -- diagnostics
 map('n', '[[', ':BufferLineCycleNext<cr>', options)
 map('n', '[d', "<cmd>lua vim.diagnostic.goto_prev()<CR>", options)
-map('n', ']d', "<cmd>lua vim.diagnostic.goto_next()<CR>", options)
+map('n', ']gd', "<cmd>lua vim.diagnostic.goto_next()<CR>", options)
+-- grapple
+map('n', "<leader>a", "<cmd>lua require'grapple'.toggle()<cr>", options)
+map('n', "<C-e>", "<cmd>lua require'grapple'.toggle_tags()<cr>", options)
+map('n', "<leader>1", "<cmd>Grapple select index=1<cr>", options)
+map('n', "<leader>2", "<cmd>Grapple select index=2<cr>", options)
+map('n', "<leader>3", "<cmd>Grapple select index=3<cr>", options)
+map('n', "<leader>4", "<cmd>Grapple select index=4<cr>", options)
