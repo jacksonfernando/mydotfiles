@@ -56,3 +56,5 @@ map('n', "<leader>1", "<cmd>Grapple select index=1<cr>", options)
 map('n', "<leader>2", "<cmd>Grapple select index=2<cr>", options)
 map('n', "<leader>3", "<cmd>Grapple select index=3<cr>", options)
 map('n', "<leader>4", "<cmd>Grapple select index=4<cr>", options)
+-- vim dadbob
+map('n', "<leader>db", "<cmd>DBUIToggle<cr>", options)
