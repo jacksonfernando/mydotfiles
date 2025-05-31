@@ -29,7 +29,7 @@ return {
         local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol
             .make_client_capabilities())
 
-        local language = { 'ts_ls', 'gopls', 'clangd', 'yamlls', 'lua_ls', 'cssls' }
+        local language = { 'ts_ls', 'gopls', 'clangd', 'yamlls', 'lua_ls', 'cssls', 'jdtls' }
 
         for _, language_server in ipairs(language) do
             require('lspconfig')[language_server].setup {
