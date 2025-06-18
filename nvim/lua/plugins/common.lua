@@ -2,12 +2,6 @@
 return {
     { "EdenEast/nightfox.nvim" },
     {
-        "williamboman/mason.nvim",
-        config = function()
-            require("mason").setup()
-        end
-    },
-    {
         "nvim-telescope/telescope.nvim",
         dependencies = { 'nvim-telescope/telescope-ui-select.nvim' },
         config = function()
